@@ -41,6 +41,50 @@
      
 exit 0
 </code></pre>
+
+
+ <p>2. Program wczytuje liczbe (dzien tygodnia) i wypisuje dzien zależnie od tego jaka liczbe wpiszemy.  _old</p>
+ <pre><code> #!/bin/bash
+ 
+#!/bin/bash
+echo "Podaj numer dnia tygodnia: "
+read dzien
+case "$dzien" in
+  "1") echo "poniedzialek" ;;
+  "2") echo "wtorek" ;;
+  "3") echo "sroda" ;;
+  "4") echo "czwartek" ;;
+  "5") echo "piatek" ;;
+  "6") echo "sobota" ;;
+  "7") echo "niedziela" ;;
+  *) echo "Nie rozumiem"
+esac
+exit 0
+     
+
+</code></pre>
+ 
+ <p>3. Program wczytuje i wypisuje Twój wiek. _old</p>
+ <pre><code> #!/bin/bash
+ 
+#!/bin/bash
+echo -n "Jak Ci minal dzien? Odpowiedz dobrze lub zle: "
+read x
+if [ "$x" = "dobrze" ]
+then echo "Lepiej byc nie moze!"
+elif [ "$x" = "zle" ]
+then echo "Moze byc tylko lepiej"
+else
+  echo "Nie pomoge Ci!!"
+  exit 1
+fi
+exit 0
+     
+</code></pre>
+
+      
+      
+      
         </section>
          
  
