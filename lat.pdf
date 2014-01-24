@@ -1,0 +1,108 @@
+\documentclass[10pt,a4paper,oneside]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[cp1250]{inputenc}
+%\usepackage{multirow}
+%\usepackage{booktabs}
+\usepackage[polish]{babel}
+%\usepackage[active]{srcltx}
+
+\begin{document} 
+114\hspace{8em}\begin{small}II.Przekształcenia liniowe\\[0.25cm]\end{small}
+\title{II. Przekształcenia liniowe}
+\addtolength{\textwidth}{3cm}
+Lemat 3. Jeżeli B jest przekształceniem określonym dodatnio, to istnieje takie przekształcenie określone dodatnio H, że $H^2=B$ (zapiszemy to tak: $H= \sqrt{B}$). Przy tym jeżeli przekształcenie B jest niezdegenerowane, to i H jest niezdegenerowane.
+
+\par Dowód. Wybierzmy w R bazę ortogonalną, w której B przyjmie postać diagonalną
+\newline
+$$
+\textbf{B}=\left[\begin{array}
+{rlcc}
+\lambda_{1}&0&\ldots&0
+\\
+0&\lambda_{2}&\ldots&0
+\\
+\ldots&\ldots&\ldots&\ldots
+\\
+0&0&\ldots&\lambda_{n}\end{array}\right].$$
+$\lambda_1,\lambda_2,...,\lambda_n$ są wartościami własnymi przekształcenia B. Zgodnie z lematem 2 wszystkie $\lambda_i \geq 0$. Przyjmijmy
+
+$$
+\textbf{H}=\left[\begin{array}
+{rlcc}
+\sqrt\lambda_{1}&0&\ldots&0
+\\
+0&\sqrt\lambda_{2}&\ldots&0
+\\
+\ldots&\ldots&\ldots&\ldots
+\\
+0&0&\ldots&\sqrt\lambda_{n}\end{array}\right],$$
+\newline
+gdzie jako $\sqrt\lambda_i$bierze się liczby nieujemne. Na mocy tego samego lematu 2 przekształcenie H jest określone dodatnio. Przy tym, jeżeli przekształcenie B jest niezdegenerowane, to (patrz:uwaga do lematu 2) $\lambda_i>0$, a więc i $\sqrt\lambda_i>0$, czyli przekształcenie H jest niezdegenerowane.
+\par 
+Przejdźmy teraz do dowodu twierdzenia 1. Niech A będzie dowolnym niezdegenerowanym przekształceniem liniowym. Przyjmijmy \newline
+$$H=\sqrt{AA^*.}$$
+Na mocy dowiedzionych lematów 1 i 3, H jest niezdegenerowany przekształceniem określonym dodatnio. Przyjmijmy dalej
+\\[0.25cm](2)\hspace{12,95em}		$U=H^-^1A.$
+\\
+\newline
+Przekształcenie U jest unitarne. Istotnie,
+
+$$UU^*=H^-^1A(H^-^1A)^*=HAA^*H^-^1=H^-^1H^2H^-^1=E$$
+
+Ze wzoru (2) wynika, że $A=Hu$. Twierdzenia zostało dowiedzione.
+\par Operację wyciągania pierwiastka kwadratowego stosowaną w tym paragrafie można wykorzystać do dowodu następującego twierdzenia: 
+
+\par Niech A i B będą dwoma przekształceniami samosprzężonymi, przy czym A - niezdegenerowanym przekształceniem określonym dodatnio. Wówczas wartości własne przekształcenia AB są rzeczywiste.
+\par Dowód. Wiemy, że wielomiany charakterystyczne (a więc i wartości własne) przekształceń
+\newline
+$$X=AB \;\;\;\; i \;\;\;\;C^-^1XC$$
+są identyczne. Przyjmijmy $C=A ^\frac{1}{2}$. Wówczas $$C^-^1XC=A^\frac{1}{2}ABA^\frac{1}{2}=A^\frac{1}{2}BA^\frac{1}{2}.$$
+
+
+
+\hspace{2em}\textsection \begin{small}15. Rozkład przekształcenia liniowego na iloczyn przekształceń\end{small}\	\	\	\	\	\	\	\	\ 115\\[0.25cm]
+ \title{15. Rozkład przekształcenia liniowego na iloczyn przekształceń}
+
+Łatwo spostrzec, że otrzymane przekształcenie jest samosprzężone
+$$(A^\frac{1}{2}BA^\frac{1}{2})^*=(A^\frac{1}{2})^*B^*(A^\frac{1}{2})^*=A^\frac{1}{2}BA^\frac{1}{2}.$$
+\par Twierdzenie zostało dowiedzione.
+\newline
+\par \textbf{Ćwiczenie.} Dowieść, że jeżeli A i B są przekształceniami określonymi dodatnio i jedno z nich jest niezdegenerowane, to przekształcenie AB ma nieujemne wartości własne.
+\newline
+\newline
+\begin{center} \textbf{\textsection 16. PRZEKSZTAŁCENIA LINIOWE W PRZESTRZENI  EUKLIDESOWEJ RZECZYWISTEJ}\end{center}
+\newline
+\\[0.25cm]\\
+\newline
+\\
+\\
+\par W tym paragrafie będziemy zajmować się przekształceniami liniowymi w przestrzeni rzeczywistej. Do tego celu wystarczy znajomość materiału zawartego w \textsection\textsection 9 - 11 niniejszego rozdziału.
+\newline
+\par \textbf{1.}Wszystkie określenia z \textsection 10, a mianowicie określenia podprzestrzeni niezmienniczej, wektora własnego, wartości własnej, były wprowadzone dla przestrzeni liniowej nad dowolnym ciałem, a więc mają sens także i dla przestrzeni liniowej rzeczywistej. \par Istotną rolę w całej teorii grało dowiedzione w \textsection 10 twierdzenie, że w przestrzeni zespolonej każde przekształcenie liniowe ma wektor własny (jednowymiarową podprzestrzeń niezmienniczą). W przypadku przestrzeni rzeczywistej twierdzenie to nie jest prawdziwe. Na przykład obrót płaszczyzny wokół początku układu współrzędnych o kąt różny od $k_\Pi$ jest przekształceniem liniowym nie mającym ani jednej jednowymiarowej podprzestrzeni niezmienniczej. Ma jednak miejsce następujące twierdzenie:
+\par TWIERDZENIE 1. Dla każdego przekształcenia liniowego A w przestrzeni liniowej rzeczywistej R istnieje jednowymiarowa lub dwumiarowa podprzestrzeń niezmiennicza.\par
+Dowód. Wybierzemy w przestrzeni R bazę $e_1, e_2,..., e_n$.Przekształceniu A odpowiada w tej bazie macierz $[a_{jk}]$.
+\newline
+Rozpatrzmy układ równań
+
+
+\par \begin{center}$ a_{11}\zeta_1+a_{12}\zeta_2+..+a_{1n}\zeta_n=\lambda\zeta_1,$\end{center}
+\par \begin{center}$ a_{21}\zeta_1+a_{22}\zeta_2+..+a_{2n}\zeta_n=\lambda\zeta_2,$\end{center}(1)\hspace{8.75em}$....................................................$\ 
+\par \begin{center}$ a_{n1}\zeta_1+a_{n2}\zeta_2+..+a_{nn}\zeta_n=\lambda\zeta_n,$\end{center}
+\newline
+Będziemy szukać jego niezerowego rozwiązania $\zeta_1^0,\zeta_2^0,...,\zeta_n^0$. Takie rozwiązanie istnieje tylko wtedy, gdy wyznacznik
+$$
+\left[\begin{array}
+{rlcc}
+a_{11}-\lambda_{1}&a_{12}&\ldots&a_{1n}
+\\
+a_{21}&a_{22}-\lambda_{2}&\ldots&a_{2n}
+\\
+.............&.............&.............&.............
+\\
+a_{n1}&a_{n2}&\ldots&a_{nn}-\lambda\end{array}\right],$$
+
+
+
+
+\end{document}
