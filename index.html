@@ -65,7 +65,7 @@ exit 0
 </code></pre>
  
  <p>3. Program udziela prostej odpowiedzi na zadane pytanie.</p>
- <pre><code> #!/bin/bash
+ <pre><code>
  
 #!/bin/bash
 echo -n "Jak Ci minal dzien? Odpowiedz dobrze lub zle: "
@@ -82,7 +82,16 @@ exit 0
      
 </code></pre>
 
-      
+<p>4. Program udziela prostej odpowiedzi na zadane pytanie.</p>
+ <pre><code>
+#!/bin/bash 
+if [ -e ~/.txt ]
+then echo "Plik .txt istnieje"
+else echo "Plik .txt nie istnieje"
+fi
+exit 0
+</code></pre>
+
 <h3>
  <a name="Tekst-Latex" class="anchor" href="#Tekst-Latex"><span class="octicon octicon-link"></span></a>Tekst Latex</h3>
  
